@@ -33,13 +33,11 @@ const NAV_MENU = [
   {
     name: "Documents",
     icon: AcademicCapIcon,
+    href:"",
     
-    href: "app/docs",
+    
   },
-  {
-    name: "Projects",
-    icon: Squares2X2Icon,
-    },
+  
 ];
 
 interface NavItemProps {
