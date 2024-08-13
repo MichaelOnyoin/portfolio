@@ -38,7 +38,9 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           {desc}
         </Typography>
         <Button color="gray" size="sm"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+
           see details
+          
         </Button>
       </CardBody>
     </Card>

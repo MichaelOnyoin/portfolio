@@ -1,8 +1,4 @@
 import React from "react";
-//import Link from 'next/link';
-//import { useRouter } from 'next/router';
-//import { usePathname } from 'next/navigation';
-//import { useNavigate } from "react-router-dom";
 
 import {
   Navbar as MTNavbar,
@@ -14,8 +10,7 @@ import {
 import {
   RectangleStackIcon,
   UserCircleIcon,
-  
-  Squares2X2Icon,
+  //DocumentTextIcon,
   AcademicCapIcon,
   XMarkIcon,
   Bars3Icon,

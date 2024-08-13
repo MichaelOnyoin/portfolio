@@ -5,13 +5,14 @@ import {
   ChartBarIcon,
   PuzzlePieceIcon,
   CursorArrowRaysIcon,
+  AcademicCapIcon,
   ArrowRightIcon,
 } from "@heroicons/react/24/solid";
 import { ResumeItem } from "../components/resume-item";
 
 const RESUME_ITEMS = [
   {
-    icon: ChartBarIcon,
+    icon: AcademicCapIcon,
     children: "Bachelor of Science in Computer Science and Informatics",
   },
   {
