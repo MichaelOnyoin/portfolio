@@ -11,9 +11,10 @@ interface ProjectCardProps {
   img: string;
   title: string;
   desc: string;
+  href:string;
 }
 
-export function ProjectCard({ img, title, desc }: ProjectCardProps) {
+export function ProjectCard({ img, title, desc, href }: ProjectCardProps) {
   return (
     <Card color="transparent" shadow={false}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
       <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
@@ -27,7 +28,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
       </CardHeader>
       <CardBody className="p-0"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         <a
-          href="#"
+          href={href}
           className="text-blue-gray-900 transition-colors hover:text-gray-800"
         >
           <Typography variant="h5" className="mb-2"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>

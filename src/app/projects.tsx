@@ -9,41 +9,49 @@ const PROJECTS = [
     img: "/image/blog-1.svg",
     title: "My-Journal Mobile App",
     desc: "This is a mobile app designed to help users create & edit journals to catalog their daily life.",
+    href:'https://expo.dev/artifacts/eas/qFQE9LoUU8fTLu7GcZvYon.aab'
   },
   {
     img: "/image/blog2.svg",
     title: "GAIPA Chatbot",
     desc: "This AI chatbot is supposed to be the pioneer of Artificial General Intelligence built using multiple models.",
+    href:'https://chatbot.onyoin.com/'
   },
   {
     img: "/image/blog3.svg",
     title: "Votechain Dapp",
     desc: "This Blockchain app is designed to help citizens store voter registry data on an Ethereum blockchain.",
+    href:'https://votechain-xi.vercel.app/'
   },
   {
     img: "/image/blog4.svg",
     title: "Careview E-Pharmacy",
     desc: "Ecommerce website offering  access to medicinal drugs from the nearest Pharmacies.",
+    href:''
   },
   {
     img: "/image/blog-1.svg",
     title: "Mobile App Development",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    href:''
   },
   {
     img: "/image/blog2.svg",
     title: "Landing Page Development",
     desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
+    href:'#',
   },
   {
     img: "/image/blog3.svg",
     title: "Mobile App Development",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    href:'#',
   },
   {
     img: "/image/blog4.svg",
     title: "E-commerce development",
     desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
+    href:'#',
   },
 ];
 
