@@ -21,7 +21,7 @@ export function PopularClients() {
             POPULAR CLIENTS
           </Typography>
           <Typography variant="h2" color="blue-gray" className="mb-4"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-            Trusted by over 10,000+ <br /> clients
+            Trusted by over 100+ <br /> clients
           </Typography>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">

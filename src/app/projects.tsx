@@ -6,25 +6,25 @@ import { Typography } from "@material-tailwind/react";
 
 const PROJECTS = [
   {
-    img: "/image/blog-1.svg",
+    img: "/image/icon1.svg",
     title: "My-Journal Mobile App",
     desc: "This is a mobile app designed to help users create & edit journals to catalog their daily life.",
     href:'https://expo.dev/artifacts/eas/qFQE9LoUU8fTLu7GcZvYon.aab'
   },
   {
-    img: "/image/blog2.svg",
+    img: "/image/chatbot.svg",
     title: "GAIPA Chatbot",
     desc: "This AI chatbot is supposed to be the pioneer of Artificial General Intelligence built using multiple models.",
     href:'https://chatbot.onyoin.com/'
   },
   {
-    img: "/image/blog3.svg",
+    img: "https://res.cloudinary.com/dbfydxolq/image/upload/v1724146489/votechain_d2b8ea.png",
     title: "Votechain Dapp",
     desc: "This Blockchain app is designed to help citizens store voter registry data on an Ethereum blockchain.",
     href:'https://votechain-xi.vercel.app/'
   },
   {
-    img: "/image/blog4.svg",
+    img: "https://res.cloudinary.com/dbfydxolq/image/upload/v1724155680/careviewlogo_2_df3w3n.svg",
     title: "Careview E-Pharmacy",
     desc: "Ecommerce website offering  access to medicinal drugs from the nearest Pharmacies.",
     href:''
