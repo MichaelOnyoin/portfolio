@@ -11,8 +11,38 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export function ContactForm() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = () => {
+    //e.preventDefault();
+    if (!form.current) {
+        console.error('Form reference is null');
+        return;
+      }
+   
+    emailjs
+      .sendForm('service_tldv0ba', 'template_n314jm9', form.current!, {
+        publicKey: 'ZYsFQxAoL-y-JRcX4',
+        
+        limitRate:{
+            throttle: 100000, // can't send more than one email per 100s
+          }
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert('Email Sent');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <section className="px-8 py-16">
       <div className="container mx-auto mb-20 text-center">
@@ -70,7 +100,7 @@ export function ContactForm() {
               </div>
             </div>
             <div className="w-full mt-8 md:mt-0 md:px-10 col-span-4 h-full p-5">
-              <form action="#">
+              <form action={sendEmail} ref={form}>
                 <div className="mb-8 grid gap-4 lg:grid-cols-2">
                   {/* @ts-ignore */}
                   <Input
@@ -78,7 +108,7 @@ export function ContactForm() {
                     size="lg"
                     variant="static"
                     label="First Name"
-                    name="first-name"
+                    name="to-name"
                     placeholder="eg. Lucas"
                     containerProps={{
                       className: "!min-w-full mb-3 md:mb-0",
@@ -103,7 +133,8 @@ export function ContactForm() {
                   size="lg"
                   variant="static"
                   label="Email"
-                  name="first-name"
+                  name="from-name"
+                  type="email"
                   placeholder="eg. lucas@mail.com"
                   containerProps={{
                     className: "!min-w-full mb-8",
@@ -135,13 +166,13 @@ export function ContactForm() {
                   size="lg"
                   variant="static"
                   label="Your Message"
-                  name="first-name"
+                  name="message"
                   containerProps={{
                     className: "!min-w-full mb-8",
                   }}
                 />
                 <div className="w-full flex justify-end">
-                  <Button className="w-full md:w-fit" color="gray" size="md" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                  <Button className="w-full md:w-fit" color="gray" type="submit" size="md" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     Send message
                   </Button>
                 </div>
