@@ -17,11 +17,11 @@ export function PopularClients() {
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto grid items-center place-items-center">
         <div className="text-center">
-          <Typography variant="h6" className="mb-4 uppercase !text-gray-500">
+          <Typography variant="h6" className="mb-4 uppercase !text-gray-500"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             POPULAR CLIENTS
           </Typography>
-          <Typography variant="h2" color="blue-gray" className="mb-4">
-            Trusted by over 10,000+ <br /> clients
+          <Typography variant="h2" color="blue-gray" className="mb-4"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            Trusted by over 100+ <br /> clients
           </Typography>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
