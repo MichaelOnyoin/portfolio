@@ -12,7 +12,7 @@ function Hero() {
             variant="h1"
             color="blue-gray"
             className="mb-4 lg:text-5xl !leading-tight text-3xl"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
-            Hey, am Michael and Welcome! to My Web <br /> Development Portofolio!
+            Hey, am Michael and Welcome! to My Web <br /> Development Portfolio!
           </Typography>
           <Typography
             variant="lead"

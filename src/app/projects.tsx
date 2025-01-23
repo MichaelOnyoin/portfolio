@@ -15,7 +15,7 @@ const PROJECTS = [
     img: "/image/chatbot.svg",
     title: "GAIPA Chatbot",
     desc: "This AI chatbot is supposed to be the pioneer of Artificial General Intelligence built using multiple models.",
-    href:'https://chatbot.onyoin.com/'
+    href:'https://chat.onyoin.com/'
   },
   {
     img: "https://res.cloudinary.com/dbfydxolq/image/upload/v1724146489/votechain_d2b8ea.png",
