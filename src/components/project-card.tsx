@@ -23,7 +23,7 @@ export function ProjectCard({ img, title, desc, href }: ProjectCardProps) {
           alt={title}
           width={768}
           height={768}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover "
         />
       </CardHeader>
       <CardBody className="p-0"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>

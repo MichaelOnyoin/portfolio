@@ -27,7 +27,7 @@ export function Clients() {
               alt={logo}
               width={768}
               height={768}
-              className="w-40"
+              className="w-40 hover:grayscale"
               src={`/logos/logo-${logo}.svg`}
             />
           ))}

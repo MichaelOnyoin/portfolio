@@ -32,7 +32,8 @@ export function PopularClients() {
               width={480}
               height={480}
               src={`/logos/logo-${logo}.svg`}
-              className="w-40 grayscale opacity-75"
+              //className="w-40 grayscale opacity-75"
+              className="w-40 bwtocolor"
             />
           ))}
         </div>

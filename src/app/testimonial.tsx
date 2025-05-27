@@ -87,13 +87,13 @@ export function Testimonial() {
                 />
               </div>
             </div>
-            <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0">
+            <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0 ">
               <Image
                 width={768}
                 height={768}
                 alt="testimonial image"
                 src={`/image/avatar${active}.jpg`}
-                className="h-full rounded-lg w-full object-cover"
+                className="h-full rounded-lg w-full object-cover "
               />
             </div>
           </CardBody>

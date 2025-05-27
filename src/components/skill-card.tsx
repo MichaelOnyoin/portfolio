@@ -10,7 +10,7 @@ export function SkillCard({ icon: Icon, title, children }: SkillCardProps) {
   return (
     <Card color="transparent" shadow={false}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
       <CardBody className="grid justify-center text-center"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-        <div className="mx-auto mb-6 grid h-12 w-12 place-items-center rounded-full bg-gray-900 p-2.5 text-white shadow">
+        <div className="mx-auto mb-6 grid h-12 w-12 place-items-center rounded-full bg-gray-800 p-2.5 text-white shadow">
           <Icon className="h-6 w-6" strokeWidth={2} />
         </div>
         <Typography variant="h5" color="blue-gray" className="mb-2"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>

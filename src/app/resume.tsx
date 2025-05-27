@@ -33,7 +33,7 @@ export function Resume() {
           <Typography variant="h2" color="blue-gray"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             My Resume
           </Typography>
-          <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500 p"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Highly skilled and creative Web Developer with 4+ years of
             experience in crafting visually stunning and functionally robust
             websites and web applications.

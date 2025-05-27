@@ -1,3 +1,101 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* .img {
+    width: 40%;
+    
+    transition: width 3s  ease-out 0.4s;
+
+  }
+  
+.img:hover {
+    width: 100%;
+  }
+
+ */
+ /* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #fdfbfb;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+ .img {
+  width: 50%;
+   /* 
+  transition-property: width;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transition-delay: 2s; */
+  opacity: 0.4;
+  transition: width 3s linear 2s, opacity 4s ease-out, transform 5s;
+  /* transition: all 3s linear 2s; */
+  animation-name: shape-image;
+  animation-duration: 7s;
+}
+
+.img:hover {
+  width: 100%;
+  opacity: 1;
+  transform: rotate(45deg);
+}
+
+.p {
+  font-size: 1rem;
+  transition-property: font-size;
+  transition-duration: 5s;
+}
+
+.p:hover {
+  font-size: 2rem;
+}
+
+.div {
+ 
+  /* animation-name: change-color; */
+  animation-name: change-width;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+
+}
+
+@keyframes change-width {
+  from {width: 50px;}
+  to {width: 100%;}
+}
+
+@keyframes change-color {
+  /* The first keyframe */
+  0% {background-color: purple;}
+  /* The last keyframe */
+  100% {background-color: yellow;}
+}
+
+@keyframes shape-image {
+  0% { width: 40%; border: 5px solid blue;}
+  40% { width: 70%; border: 1px solid red; border-radius: 50%;}
+  75% { width: 50%; border: 30px solid green;}
+  100% { width: 100%; border: 7px solid purple;}
+}
+
+.bwtocolor img {
+	-webkit-filter: grayscale(100%) !important;
+	filter: grayscale(100%) !important;
+ 
+}
+
+
+.bwtocolor img:hover {
+	-webkit-filter: grayscale(0) !important;
+	filter: grayscale(0) !important;
+}

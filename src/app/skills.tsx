@@ -52,7 +52,7 @@ const SKILLS = [
 
 export function Skills() {
   return (
-    <section className="px-8">
+    <section className="px-8 ">
       <div className="container mx-auto mb-20 text-center">
         <Typography color="blue-gray" className="mb-2 font-bold uppercase"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           my skills
@@ -62,7 +62,7 @@ export function Skills() {
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full !text-gray-500 lg:w-10/12"
+          className="mx-auto w-full !text-gray-500 lg:w-10/12 xl:w-8/12 "
           placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
         >
           I&apos;m not just a developer; I&apos;m a digital dreamweaver.
