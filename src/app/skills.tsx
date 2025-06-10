@@ -10,6 +10,7 @@ import {
   ServerStackIcon,
 } from "@heroicons/react/24/solid";
 import { SkillCard } from "../components/skill-card";
+import {motion} from "framer-motion";
 
 const SKILLS = [
   {
@@ -52,6 +53,13 @@ const SKILLS = [
 
 export function Skills() {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="rounded-none bg-zinc-800 p-6 shadow-sm"
+    >
     <section className="px-8 ">
       <div className="container mx-auto mb-20 text-center">
         <Typography color="blue-gray" className="mb-2 font-bold uppercase"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
@@ -72,10 +80,11 @@ export function Skills() {
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
         {SKILLS.map((props, idx) => (
-          <SkillCard key={idx} {...props} />
+          <SkillCard key={idx} {...props} delay={idx * 0.15} />
         ))}
       </div>
     </section>
+    </motion.div>
   );
 }
 

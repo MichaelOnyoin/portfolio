@@ -15,12 +15,12 @@
   }
 
  */
- /* @media (prefers-color-scheme: dark) {
+ @media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #fdfbfb;
   }
-} */
+}
 
 body {
   color: var(--foreground);

@@ -6,7 +6,7 @@ import { Input, Button, Typography } from "@material-tailwind/react";
 function Hero() {
   return (
     <header className=" p-8">
-      <div className=" container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
+      <div className=" container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2 dark:text-white">
         <div className="row-start-2 lg:row-auto">
           <Typography
             variant="h1"

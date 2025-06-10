@@ -4,9 +4,10 @@ interface SkillCardProps {
   title: string;
   icon: React.ElementType;
   children: React.ReactNode;
+  delay?: number;
 }
 
-export function SkillCard({ icon: Icon, title, children }: SkillCardProps) {
+export function SkillCard({ icon: Icon, title, children, delay=0 }: SkillCardProps) {
   return (
     <Card color="transparent" shadow={false}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
       <CardBody className="grid justify-center text-center"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
