@@ -1,15 +1,18 @@
 // components
-import { Navbar, Footer } from "@/components";
-
+'use client';
+//import { Navbar, Footer } from "@/components";
+import { Footer } from "../components/footer"; 
+import { Navbar } from "../components/navbar"; 
 // sections
 import Hero from "./hero";
 import Clients from "./clients";
 import Skills from "./skills";
 import Projects from "./projects";
 import Resume from "./resume";
-import Testimonial from "./testimonial";
+//import Testimonial from "./testimonial";
 import PopularClients from "./popular-clients";
 import ContactForm from "./contact-form";
+import TestimonialTest from "@/components/Test";
 
 export default function Portfolio() {
   return (
@@ -20,7 +23,8 @@ export default function Portfolio() {
       <Skills />
       <Projects />
       <Resume />
-      <Testimonial />
+      {/* <Testimonial /> */}
+      <TestimonialTest />
       <PopularClients />
       <ContactForm />
       <Footer />

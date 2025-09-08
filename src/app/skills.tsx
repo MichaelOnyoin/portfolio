@@ -3,13 +3,14 @@
 import { Typography } from "@material-tailwind/react";
 import {
   RectangleGroupIcon,
-  FingerPrintIcon,
   SwatchIcon,
-  HashtagIcon,
-  EyeIcon,
-  DocumentTextIcon,
+  CursorArrowRippleIcon,
+  DevicePhoneMobileIcon,
+  CpuChipIcon,
+  ServerStackIcon,
 } from "@heroicons/react/24/solid";
-import { SkillCard } from "@/components";
+import { SkillCard } from "../components/skill-card";
+import {motion} from "framer-motion";
 
 const SKILLS = [
   {
@@ -19,7 +20,7 @@ const SKILLS = [
       "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build websites that captivate and engage users.",
   },
   {
-    icon: FingerPrintIcon,
+    icon: DevicePhoneMobileIcon,
     title: "Mobile App Development",
     children:
       " I specialize in creating responsive and intuitive mobile apps that work seamlessly across iOS & Android devices. From concept to deployment, I handle every stage of the development process.",
@@ -28,41 +29,49 @@ const SKILLS = [
     icon: SwatchIcon,
     title: "Technology Stack",
     children:
-      "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript, and frameworks like React and React Native.",
+      "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript,Typescript and frameworks like React, NextJS and React Native.",
   },
   {
-    icon: HashtagIcon,
+    icon: CursorArrowRippleIcon,
     title: " Web Optimization",
     children:
       "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
   },
   {
-    icon: EyeIcon,
-    title: "User-Centric Design",
+    icon: ServerStackIcon,
+    title: "Server & Database Administration",
     children:
-      "My development goes hand-in-hand with an eye for design. I create user interfaces that are not only functional but also aesthetically pleasing, providing a seamless and enjoyable user journey.",
+      "My Back-end development skills go hand-in-hand with my Server and Database administration skills. I create secure databases that provide storage for websites and mobile apps, providing a seamless UI using databases like Supabase,Firebase, MySQL, MongoDB & Postgres.",
   },
   {
-    icon: DocumentTextIcon,
-    title: "Testing and Quality Assurance",
+    icon: CpuChipIcon,
+    title: "AI Engineering and Data Science",
     children:
-      "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Your peace of mind is as important to me as the functionality of your project.",
+      "I rigorously test and train AI models to create customized chatbots, co-pilots & other AI apps for users. Your ease of use is as important to me as the functionality of your project.",
   },
 ];
 
 export function Skills() {
   return (
-    <section className="px-8">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="rounded-none bg-zinc-800 p-6 shadow-sm"
+    >
+    <section className="px-8 ">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
+        <Typography color="blue-gray" className="mb-2 font-bold uppercase"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           my skills
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        <Typography variant="h1" color="blue-gray" className="mb-4"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           What I do
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full !text-gray-500 lg:w-10/12"
+          className="mx-auto w-full !text-gray-500 lg:w-10/12 xl:w-8/12 "
+          placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
         >
           I&apos;m not just a developer; I&apos;m a digital dreamweaver.
           Crafting immersive online experiences is not just a job but my
@@ -71,10 +80,11 @@ export function Skills() {
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
         {SKILLS.map((props, idx) => (
-          <SkillCard key={idx} {...props} />
+          <SkillCard key={idx} {...props} delay={idx * 0.15} />
         ))}
       </div>
     </section>
+    </motion.div>
   );
 }
 
